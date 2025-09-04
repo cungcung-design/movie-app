@@ -1,0 +1,408 @@
+@import "tailwindcss";
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+section{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(33, 31, 31);
+}
+.Home-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/p03.png'); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+  text-align: center;
+}
+nav{
+}
+.nav-link {
+  text-decoration: none;
+  transition: all 0.3s ;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.05); 
+  color: #ffffff;
+}
+
+.nav-link.active {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+/* Main full-screen box */
+.Movie-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Card container */
+.card {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid rgb(232, 232, 232);
+  overflow: hidden;
+  background-color: #f1ecec;
+
+}
+.Movie-section .row{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+  
+  
+}
+.image1 {
+  width: 100%;
+  height:400px;
+  display: block;
+}
+
+.info-section {
+  padding: 10px;
+  text-align: center;
+}
+
+.container h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.Movie-section button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+ transition: all 0.3s ease;
+}
+.btn-1 {
+  color: rgb(215, 2, 2);
+  background-color: #f1eff0; 
+  border: 2px solid rgb(194, 11, 11);   
+}
+
+.btn-1:hover {
+  background-color: #be123c; 
+  color: white;
+}
+  
+
+.btn-2 {
+  background-color: #a3a3a3; 
+  color: black;
+}
+
+.btn-2:hover {
+  background-color: #787878; 
+}
+
+.detail_section {
+  width: 100%;
+  min-height: 100vh; 
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail_section .row {
+  background-color: transparent;
+  display: flex;
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+}
+
+.detail_section .image-container {
+  width: 450px;
+  height: auto;
+
+}
+
+.detail_section .image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.detail_section .content-container {
+}
+
+.detail_section .content-container h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.detail_section .content-container p {
+ 
+  margin-bottom: 15px;
+}
+
+.detail_section .text-container .d-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  border-bottom: 1px solid #333;
+}
+.detail_section .text-container .p-container{
+  
+}
+.detail_section span{
+  display: block;
+  padding: 10px;
+}
+.detail_section button{
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 12px 18px;
+  background-color: red;
+  cursor: pointer;
+}
+.detail_section button:hover{
+  background-color: rgb(213, 7, 7);
+  transform: scale(1.1);
+}
+.detail_section .btn-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.about_section{
+  padding-top: 50px;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  
+}
+.about_section .container{
+  color: white;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.about_section .text-container{
+  color: white;
+  width: 450px;
+  text-align: justify;
+  
+}
+.about_section img{
+  width: 100%;
+  height: auto;
+}
+.about_section .image-container{
+  width: 350px;
+  height: auto;
+}
+
+.contact_section{
+  width: 100%;
+  height: 100vh;
+}
+
+.contact_section .container {
+  color: white;
+  width: 100%;
+  margin: 0 auto; 
+  text-align: center;
+}
+.contact_section .row{
+display: flex;
+flex-direction: column;
+
+
+}
+
+.contact_section h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px
+}
+.contact_section p{
+  text-align: center;
+  font-size: 18px;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 800px;
+  
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  color:  black;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #c9bbbb;
+  width: 100%;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgb(49, 37, 210);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: rgb(49, 37, 240);
+}
+.contact-form .form-input{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+.Sign_section {
+  width: 100%;
+  height: 100vh;
+}
+.Sign_section h1{
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.Sign_section .form-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Sign_section form{
+  background-color: #0046FF;
+  width: 600px;
+  display: flex;
+  border-radius: 10px;
+  padding: 20px 25px;
+  justify-content: center;
+  flex-direction: column;
+}
+.Sign_section form input {
+  width: 100%;
+  background-color: rgb(231, 226, 226);
+  border-radius: 5px;
+  padding: 12px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.Sign_section .register{
+  margin-top: 18px;
+  background-color: #FF8040;
+  font-weight: 600;
+}
+.Sign_section .register:hover{
+  background-color: #f66e2a;
+}
+.Sign_section label{
+  font-weight: 600;
+}
+
+
+.Login_section{
+  width: 100%;
+  height: 100vh;
+}
+
+.Login_section h1{
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.Login_section .form-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Login_section form{
+  background-color: #0046FF;
+  width: 600px;
+  display: flex;
+  border-radius: 10px;
+  padding: 20px 25px;
+  justify-content: center;
+  flex-direction: column;
+}
+.Login_section form input {
+  width: 100%;
+  background-color: rgb(231, 226, 226);
+  border-radius: 5px;
+  padding: 12px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.Login_section .register{
+  margin-top: 18px;
+  background-color: #FF8040;
+  font-weight: 600;
+}
+.Login_section .register:hover{
+  background-color: #f66e2a;
+}
+.Login_section label{
+  font-weight: 600;
+}
+/* .Login_section, .Sign_section label{
+  font-size: 18px;
+} */
